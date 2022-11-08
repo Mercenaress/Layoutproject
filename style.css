@@ -1,0 +1,62 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    overflow-x:hidden;
+    background-color:#EBEBEB;
+}
+
+.header {
+    max-width:62.5rem;
+}
+
+.header__container--blue {
+    background-color:#c7ddea;
+    background-image:url("Images/family.png");
+    color:black;
+    font-family:'Frank Ruhl Libre',serif;
+    font-style:normal;
+    font-weight:900;
+
+}
+
+.header__container--orange {
+    background-color:#F17949;
+    font-family:'Frank Ruhl Libre',serif;
+    color:#ffffff;
+}
+
+.header__container--yellow {
+    background-color:#FFB939;
+    font-family:'Frank Ruhl Libre',serif;
+    color:#ffffff;
+}
+
+.header__nav {
+    font-family:'Fira Sans', sans-serif;
+
+}
+
+a {
+    color:black;
+    opacity:0.4;
+}
+
+.main {
+    max-width:62.5rem;
+}
+
+.footer {
+    max-width:62.5rem;
+}
+
+.text--opacity--60 {
+    color:black;
+    opacity:0.6;
+    font-family:'Fira Sans', sans-serif;
+    font-weight:500;
+    font-size:14px;
+}
