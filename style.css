@@ -157,7 +157,7 @@ a:first-child {
     font-weight: 900;
     color: #ffffff;
     width: 20rem;
-    margin: 6.5rem 0;
+    margin: 6.5rem 0 8.3rem 0;
 }
 
 .main__bodytext--top {
@@ -167,7 +167,7 @@ a:first-child {
     color: rgba(0, 0, 0, 0.6);
     line-height: 24px;
     width: 19rem;
-    margin-top: 6.5rem;
+    margin: 6.5rem 0 8.3rem 0;
 }
 
 .main__card {
@@ -182,6 +182,9 @@ a:first-child {
     width: 16rem;
     height: 19.2rem;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main__box--child {
@@ -193,9 +196,7 @@ a:first-child {
     width:14.8rem;
     height:9.4rem;
     border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    transform: translateY(-1.5rem);
 }
 
 .main__card--adult {
@@ -203,6 +204,9 @@ a:first-child {
     width: 16rem;
     height: 19.2rem;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main__box--adult {
@@ -214,6 +218,7 @@ a:first-child {
     width:14.8rem;
     height:9.4rem;
     border-radius: 4px;
+    transform: translateY(-1.5rem);
 }
 
 .main__card--old {
@@ -221,6 +226,9 @@ a:first-child {
     width: 16rem;
     height: 19.2rem;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main__box--old {
@@ -232,9 +240,10 @@ a:first-child {
     width:14.8rem;
     height:9.4rem;
     border-radius: 4px;
+    transform: translateY(-1.5rem);
 }
 
-.main__box--child h5, .main__box--adult h5, .main__box--old h5 {
+.main__card--child h5, .main__card--adult h5, .main__card--old h5 {
     font-family: 'Frank Ruhl Libre',serif;
     font-size: 16px;
     font-weight: 700;
@@ -242,13 +251,14 @@ a:first-child {
     text-align: center;
 }
 
-.main__box--child p, .main__box--adult p, .main__box--old p {
+.main__card--child p, .main__card--adult p, .main__card--old p {
     font-family: 'Fira Sans', sans-serif;
     font-size: 11px;
     font-weight: 700;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.4);
     text-align: center;
+    margin: 10px 15px;
 }
 
 .main__container--bottom {
@@ -268,7 +278,7 @@ a:first-child {
     font-size: 45px;
     font-weight: 900;
     color: #ffffff;
-    margin: 60px 0 40px 0;
+    margin: 50px 0 30px 0;
 }
 
 .main__heading--bottom p {
@@ -283,8 +293,101 @@ a:first-child {
     margin: 1rem 0 9.3rem 0;
 }
 
-.main__heading--bottom span {
-    padding-top: 10px;
+.main__boxes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 42.5rem;
+}
+
+.main__boxes--00 {
+    background-color: #c7ddea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 21.25rem;
+}
+
+.main__boxes--01 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 21.25rem;
+}
+
+.main__boxes--02 {
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 21.25rem;
+}
+
+.main__boxes--03 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 21.25rem;
+}
+
+.main__boxes--04 {
+    background-color: #F17949;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 21.25rem;
+}
+
+.main__boxes--05 {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 21.25rem;
+}
+
+.main__boxes--00 h1 {
+    font-family: 'Frank Ruhl Libre',serif;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 0 30px;
+}
+
+.main__boxes--01 h3, 
+.main__boxes--02 h3,
+.main__boxes--03 h3,
+.main__boxes--04 h3,
+.main__boxes--05 h3 {
+    font-family: 'Frank Ruhl Libre',serif;
+    font-size: 35px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.4);
+    justify-self: flex-start;
+    align-self: flex-start;
+    
+}
+
+.main__boxes--01 p, 
+.main__boxes--02 p,
+.main__boxes--03 p,
+.main__boxes--04 p,
+.main__boxes--05 p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 0 30px;
 }
 
 .footer {
