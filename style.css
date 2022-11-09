@@ -1,12 +1,12 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 0;
 }
 
 body {
-    width:100vw;
-    height:100vh;
-    overflow-x:hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
     background-color:#ffffff;
     margin: 0;
     display: flex;
@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-    max-width:62.5rem;
+    max-width: 62.5rem;
 }
 
 .header__container {
@@ -26,14 +26,14 @@ body {
 }
 
 .header__container--blue {
-    background-color:#c7ddea;
-    background-image:url("Images/family.png");
+    background-color: #c7ddea;
+    background-image: url("Images/family.png");
     background-size: 17.9rem auto;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: 90% 100%;
     max-width: 31.25rem;
     height: 34rem;
-    position:absolute;
+    position: absolute;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -42,19 +42,19 @@ body {
 }
 
 .header__container--blue h1 {
-    color:black;
+    color: black;
     font-size: 45px;
-    font-family:'Frank Ruhl Libre',serif;
-    font-weight:900;
+    font-family: 'Frank Ruhl Libre',serif;
+    font-weight: 900;
     line-height: 45px;
 }
 
 .header__container--blue p {
-    color:black;
-    opacity:0.6;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:500;
-    font-size:14px;
+    color: black;
+    opacity: 0.6;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 24px;
     margin-top: 10px;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 .header__container--orange {
-    background-color:#F17949;
+    background-color: #F17949;
     min-width: 31.25rem;
     height: 272px;
     position:absolute;
@@ -82,12 +82,12 @@ body {
 }
 
 .header__container--yellow {
-    background-color:#FFB939;
-    font-family:'Frank Ruhl Libre',serif;
-    color:#ffffff;
+    background-color: #FFB939;
+    font-family: 'Frank Ruhl Libre',serif;
+    color: #ffffff;
     min-width: 31.25rem;
     height: 272px;
-    position:absolute;
+    position: absolute;
     right: 0;
     bottom: 0;
     display: flex;
@@ -99,15 +99,15 @@ body {
 .header__container--orange p, .header__container--yellow p {
     font-size: 11px;
     font-weight: 700;
-    font-family:'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: rgba(0, 0, 0, 0.5);
 }
 
 .header__container--orange h2, .header__container--yellow h2 {
     font-size: 32px;
     font-weight: 900;
-    font-family:'Frank Ruhl Libre',serif;
-    color:#ffffff;
+    font-family: 'Frank Ruhl Libre',serif;
+    color: #ffffff;
     margin: 0;
 }
 
@@ -155,7 +155,7 @@ a:first-child {
 }
 
 .main {
-    max-width:62.5rem;
+    max-width: 62.5rem;
 }
 
 .main__divider {
@@ -207,13 +207,13 @@ a:first-child {
 }
 
 .main__box--child {
-    background-color:#c7ddea;
-    background-image:url("Images/child.png");
-    background-size:90px;
-    background-repeat:no-repeat;
-    background-position:50% 10px;
-    width:14.8rem;
-    height:9.4rem;
+    background-color: #c7ddea;
+    background-image: url("Images/child.png");
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    width: 14.8rem;
+    height: 9.4rem;
     border-radius: 4px;
     transform: translateY(-1.5rem);
 }
@@ -231,12 +231,12 @@ a:first-child {
 
 .main__box--adult {
     background-color: #FFB939;
-    background-image:url("Images/adult.png");
-    background-size:100px;
-    background-repeat:no-repeat;
-    background-position:50% 10px;
-    width:14.8rem;
-    height:9.4rem;
+    background-image: url("Images/adult.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    width: 14.8rem;
+    height: 9.4rem;
     border-radius: 4px;
     transform: translateY(-1.5rem);
 }
@@ -255,11 +255,11 @@ a:first-child {
 .main__box--old {
     background-color: #F17949;
     background-image: url("Images/old.png");
-    background-size:130px;
-    background-repeat:no-repeat;
-    background-position:50% 15px;
-    width:14.8rem;
-    height:9.4rem;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: 50% 15px;
+    width: 14.8rem;
+    height: 9.4rem;
     border-radius: 4px;
     transform: translateY(-1.5rem);
 }
@@ -481,13 +481,16 @@ a:first-child {
 
 .footer__container--contact {
     background-image: url("Images/map-contact.png");
-    min-height: 25rem;
+    min-height: 25.2rem;
+    display: flex;
 }
 
 .footer__adress--contact {
     background-color: #FAB131;
     width: 20rem;
     height: 13rem;
+    margin: 50px 80px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .footer__adress--contact h1 {
@@ -505,6 +508,11 @@ a:first-child {
     color: rgba(255, 255, 255, 0.8);
     line-height: 24px;
     margin-left: 15px;
+}
+
+.footer__container--contact img {
+    display: flex;
+    align-self: center;
 }
 
 .footer__box {
