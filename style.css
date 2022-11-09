@@ -59,10 +59,17 @@ body {
     line-height: 24px;
 }
 
+.header__container--highlight {
+    color: #ffffff;
+}
+
+.header__container--blue button {
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
 .header__container--orange {
     background-color:#F17949;
-    font-family:'Frank Ruhl Libre',serif;
-    color:#ffffff;
     min-width: 31.25rem;
     height: 272px;
     position:absolute;
@@ -89,13 +96,28 @@ body {
     justify-content: center;
 }
 
+.header__container--orange p, .header__container--yellow p {
+    font-size: 11px;
+    font-weight: 700;
+    font-family:'Fira Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header__container--orange h2, .header__container--yellow h2 {
+    font-size: 32px;
+    font-weight: 900;
+    font-family:'Frank Ruhl Libre',serif;
+    color:#ffffff;
+    margin: 0;
+}
+
 .header__nav {
     width: 62.5rem;
-    height: 50px;
+    height: 35px;
     font-family:'Fira Sans', sans-serif;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
 }
 
 a {
@@ -112,6 +134,7 @@ a {
 
 .main__divider {
     background: linear-gradient(#A9A19E 50%, #FAB131 50%);
+
 }
 
 .main__card {
