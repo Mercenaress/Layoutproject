@@ -195,17 +195,6 @@ a:first-child {
     gap: 1.6rem;
 }
 
-.main__card--child {
-    background-color: #ffffff;
-    width: 16rem;
-    height: 19.2rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-}
-
 .main__box--child {
     background-color: #c7ddea;
     background-image: url("Images/child.png");
@@ -216,17 +205,6 @@ a:first-child {
     height: 9.4rem;
     border-radius: 4px;
     transform: translateY(-1.5rem);
-}
-
-.main__card--adult {
-    background-color: #ffffff;
-    width: 16rem;
-    height: 19.2rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main__box--adult {
@@ -241,17 +219,6 @@ a:first-child {
     transform: translateY(-1.5rem);
 }
 
-.main__card--old {
-    background-color: #ffffff;
-    width: 16rem;
-    height: 19.2rem;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-}
-
 .main__box--old {
     background-color: #F17949;
     background-image: url("Images/old.png");
@@ -262,6 +229,19 @@ a:first-child {
     height: 9.4rem;
     border-radius: 4px;
     transform: translateY(-1.5rem);
+}
+
+.main__card--child,
+.main__card--adult,
+.main__card--old {
+    background-color: #ffffff;
+    width: 16rem;
+    height: 19.2rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main__card--child h5, 
