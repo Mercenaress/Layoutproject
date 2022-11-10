@@ -42,20 +42,19 @@ body {
 }
 
 .header__container--blue h1 {
-    color: black;
-    font-size: 45px;
     font-family: 'Frank Ruhl Libre',serif;
+    font-size: 45px;
     font-weight: 900;
     line-height: 45px;
+    color: black;
 }
 
 .header__container--blue p {
-    color: black;
-    opacity: 0.6;
     font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 500;
     line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
     margin-top: 10px;
 }
 
@@ -71,7 +70,7 @@ body {
 .header__container--orange {
     background-color: #F17949;
     min-width: 31.25rem;
-    height: 272px;
+    height: 17rem;
     position:absolute;
     right: 0;
     top: 0;
@@ -83,10 +82,8 @@ body {
 
 .header__container--yellow {
     background-color: #FFB939;
-    font-family: 'Frank Ruhl Libre',serif;
-    color: #ffffff;
     min-width: 31.25rem;
-    height: 272px;
+    height: 17rem;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -96,17 +93,19 @@ body {
     justify-content: center;
 }
 
-.header__container--orange p, .header__container--yellow p {
+.header__container--orange p, 
+.header__container--yellow p {
+    font-family: 'Fira Sans', sans-serif;
     font-size: 11px;
     font-weight: 700;
-    font-family: 'Fira Sans', sans-serif;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.header__container--orange h2, .header__container--yellow h2 {
+.header__container--orange h2, 
+.header__container--yellow h2 {
+    font-family: 'Frank Ruhl Libre',serif;
     font-size: 32px;
     font-weight: 900;
-    font-family: 'Frank Ruhl Libre',serif;
     color: #ffffff;
     margin: 0;
 }
@@ -130,19 +129,19 @@ body {
 }
 
 .header__nav {
-    width: 62.5rem;
-    height: 60px;
     background-color: #EBEBEB;
-    font-family:'Fira Sans', sans-serif;
+    width: 62.5rem;
+    height: 3.75rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 a {
-    color: rgba(0, 0, 0, 0.4);
+    font-family:'Fira Sans', sans-serif;
     font-size: 12px;
     font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
     text-decoration: none;
 }
 
@@ -182,8 +181,8 @@ a:first-child {
     font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.6);
     line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
     width: 19rem;
     margin: 6.5rem 0 8.3rem 0;
 }
@@ -198,7 +197,7 @@ a:first-child {
 .main__box--child {
     background-color: #c7ddea;
     background-image: url("Images/child.png");
-    background-size: 90px;
+    background-size: 5.6rem;
     background-repeat: no-repeat;
     background-position: 50% 10px;
     width: 14.8rem;
@@ -210,7 +209,7 @@ a:first-child {
 .main__box--adult {
     background-color: #FFB939;
     background-image: url("Images/adult.png");
-    background-size: 100px;
+    background-size: 6.25rem;
     background-repeat: no-repeat;
     background-position: 50% 10px;
     width: 14.8rem;
@@ -222,7 +221,7 @@ a:first-child {
 .main__box--old {
     background-color: #F17949;
     background-image: url("Images/old.png");
-    background-size: 130px;
+    background-size: 8.1rem;
     background-repeat: no-repeat;
     background-position: 50% 15px;
     width: 14.8rem;
@@ -290,8 +289,8 @@ a:first-child {
     font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.6);
     line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .main__heading--bottom p:last-child {
@@ -299,9 +298,9 @@ a:first-child {
 }
 
 .main__boxes {
+    height: 42.5rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    height: 42.5rem;
 }
 
 .main__boxes--00 {
@@ -314,49 +313,40 @@ a:first-child {
 
 .main__boxes--01 {
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 21.25rem;
 }
 
 .main__boxes--02 {
     background-color: #EBEBEB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 21.25rem;
 }
 
 .main__boxes--03 {
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 21.25rem;
 }
 
 .main__boxes--04 {
     background-color: #F17949;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 21.25rem;
 }
 
 .main__boxes--05 {
     background-color: #ffffff;
+}
+
+.main__boxes--01, 
+.main__boxes--02,
+.main__boxes--03,
+.main__boxes--04,
+.main__boxes--05 {
+    height: 21.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 21.25rem;
 }
 
 .main__boxes--00 h1 {
     font-family: 'Frank Ruhl Libre',serif;
     font-size: 45px;
-    line-height: 45px;
     font-weight: 900;
+    line-height: 45px;
     color: rgba(0, 0, 0, 0.8);
     text-align: center;
     margin: 0 30px;
@@ -371,8 +361,7 @@ a:first-child {
     font-size: 35px;
     font-weight: 900;
     color: rgba(0, 0, 0, 0.4);
-    margin: 20px 0 auto 30px;
-    
+    margin: 20px 0 auto 30px;    
 }
 
 .main__boxes--01 p, 
@@ -395,7 +384,7 @@ a:first-child {
     min-height: 34rem;
     display: flex;
     justify-content: space-evenly;
-    padding: 100px 0;
+    padding: 6.25rem 0;
 }
 
 .main__title--contact {
@@ -438,14 +427,14 @@ a:first-child {
 }
 
 .footer {
+    background-color: #777574;
     min-width:62.5rem;
     min-height: 25.5rem;
-    background-color: #777574;
 }
 
 .footer__nav {
-    min-height: 5rem;
     background-color: #A9A19E;
+    min-height: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -485,8 +474,8 @@ a:first-child {
     font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
     line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
     margin-left: 15px;
 }
 
@@ -497,15 +486,15 @@ a:first-child {
 
 .footer__box {
     background-color: #777574;
-    height: 340px;
+    height: 21.25rem;
 }
 
 .button {
     background-color: #ffffff;
-    color: rgba(0, 0, 0, 0.8);
     font-family: 'Fira Sans', sans-serif;
     font-size: 10px;
     font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
     border-radius: 6.25rem;
     padding: 12px 40px;
     border: none;
